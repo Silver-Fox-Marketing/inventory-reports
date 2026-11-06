@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light dark">
+<title>Aged Inventory</title>
+<link rel="stylesheet" href="styles.css?v=d22ad94d8b">
+</head>
+<body>
+<div id="app" class="page">
+  <section id="lock" class="lock" hidden>
+    <div class="kick">Silver Fox Marketing</div>
+    <h1>Aged Inventory</h1>
+    <p class="mut">Days on the lot for every dealer we scrape, updated each weekday morning.</p>
+    <form id="unlock" autocomplete="on">
+      <label for="pw">Team password</label>
+      <input id="pw" name="password" type="password" autocomplete="current-password" required>
+      <label class="remember"><input id="remember" type="checkbox" checked> Remember on this device</label>
+      <button type="submit" class="primary">Open</button>
+      <p id="lockmsg" class="err" role="alert"></p>
+    </form>
+  </section>
+
+  <header id="bar" class="bar" hidden>
+    <a href="#" class="brand"><span class="kick">Silver Fox</span> Aged Inventory</a>
+    <span id="asof" class="mut"></span>
+    <button type="button" id="lockbtn" class="ghost">Lock</button>
+  </header>
+
+  <section id="picker" hidden>
+    <input id="search" type="search" placeholder="Search dealerships" aria-label="Search dealerships" autocomplete="off">
+    <div id="sortby" class="sortby" role="group" aria-label="Sort dealerships"></div>
+    <nav id="letters" class="letters" aria-label="Jump to letter"></nav>
+    <div id="list" class="list"></div>
+  </section>
+
+  <section id="report" hidden></section>
+</div>
+<script src="sortable.js?v=d22ad94d8b"></script>
+<script src="app.js?v=d22ad94d8b"></script>
+</body>
+</html>
